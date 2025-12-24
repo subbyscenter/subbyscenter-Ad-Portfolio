@@ -13,8 +13,6 @@
             font-family: 'Pretendard', sans-serif;
             background-color: #000000;
             color: #ffffff;
-            /* Allow vertical scrolling on body for mobile if content overflows, 
-               but keep the slide feel */
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
@@ -30,7 +28,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* Mobile scrollbar hide */
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
         }
@@ -42,10 +39,13 @@
 <script type="importmap">
 {
   "imports": {
-    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "process": "https://esm.sh/process@^0.11.10"
   }
 }
 </script>
@@ -53,6 +53,6 @@
 </head>
 <body>
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
