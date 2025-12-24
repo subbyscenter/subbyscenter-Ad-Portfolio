@@ -1,0 +1,7 @@
+{
+  "name": "Service Center x Nyangkong-i Ad Portfolio",
+  "description": "A premium interactive presentation platform showcasing creative advertising references including dubbing, 3D blending, and viral challenges.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
